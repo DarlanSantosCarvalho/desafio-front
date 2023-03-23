@@ -1,9 +1,9 @@
 import React from "react";
-import "./main.css";
+import "./blog.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
-const Main = () => {
+const Blog = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -17,19 +17,24 @@ const Main = () => {
   useEffect(() => {
     axios
       .get("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => setComments(response.data.slice(0, 10)));
+      .then((response) => setComments(response.data));
   }, []);
+
+  const services = [comments, data]
+
+  console.log(services)
 
   return (
     <section>
-      {comments.map((elements, index) => {
-        console.log(elements);
+      {services.map((elements, index) => {
         return (
           <div className="container" key={index}>
+            <div className="userId">
+              <p>{data.username}</p>
+              <p>{data.email}</p>
+            </div>
             <h2>{elements.title}</h2>
             <h2>{elements.body}</h2>
-
-
           </div>
         );
       })}
@@ -37,4 +42,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Blog;

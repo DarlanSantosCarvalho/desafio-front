@@ -1,12 +1,12 @@
 import Header from "./components/header/header"
-import Main from "./components/main/main"
+import Blog from "./components/blog/blog"
 
 function App() {
   return (
     <>
     <Header />
 
-    <Main />
+    <Blog />
     </>
   )
 }
