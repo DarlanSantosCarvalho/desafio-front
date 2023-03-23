@@ -12,38 +12,28 @@ const Main = () => {
       .then((response) => setData(response.data));
   }, []);
 
-  const [coment, setComent] = useState([]);
+  const [comments, setComments] = useState([]);
 
   useEffect(() => {
     axios
-    .get("https://jsonplaceholder.typicode.com/posts")
-    .then((response) => setComent(response.coment));
+      .get("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => setComments(response.data.slice(0, 10)));
   }, []);
 
-  console.log(coment)
-
-  console.log(data)
-
   return (
-    <div className="container-comentario">
-      <div className="userId">
-        <h2>{data[7]?.username}</h2>
-        <h2>{data[7]?.email}</h2>
-      </div>
+    <section>
+      {comments.map((elements, index) => {
+        console.log(elements);
+        return (
+          <div className="container" key={index}>
+            <h2>{elements.title}</h2>
+            <h2>{elements.body}</h2>
 
-      <div className="titleComent">
-        <h2>Titulo</h2>
-      </div>
 
-      <div className="comentario">
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-          laborum et nisi molestiae delectus. Quasi, impedit sapiente ratione
-          qui enim eos. Reprehenderit nihil consequatur numquam laborum
-          doloremque asperiores voluptatibus fuga!
-        </h1>
-      </div>
-    </div>
+          </div>
+        );
+      })}
+    </section>
   );
 };
 
