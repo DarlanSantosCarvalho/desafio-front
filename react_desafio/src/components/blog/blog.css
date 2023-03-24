@@ -15,7 +15,7 @@ body{
     margin-bottom: 80px;
     margin-left: 220px;
     border-radius: 25px;
-    border: 1px solid rgb(87, 74, 232);
+    border: 1px solid rgb(252, 0, 0);
     height: 300px;
     width: 70%;
     background-color: rgb(255, 255, 255);
@@ -47,4 +47,9 @@ body{
 .titleComent,
 .comentario{
     padding-left: 15px;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 400;
 }

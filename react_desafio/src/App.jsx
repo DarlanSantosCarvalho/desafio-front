@@ -1,14 +1,14 @@
-import Header from "./components/header/header"
-import Blog from "./components/blog/blog"
+import Header from "./components/header/header";
+import { AppRoutes } from "./components/pages/routes";
 
 function App() {
   return (
     <>
-    <Header />
+      <Header />
 
-    <Blog />
+      <AppRoutes />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,22 +1,17 @@
 import React from "react";
-import "./blog.css";
+import "../blog/blog.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-const Blog = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/users")
-      .then((response) => setData(response.data));
-  }, []);
-
+const Comment = () => {
   const [comments, setComments] = useState([]);
 
+  const { id } = useParams();
+
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/posts")
+      .get(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
       .then((response) => setComments(response.data));
   }, []);
 
@@ -26,8 +21,8 @@ const Blog = () => {
         //console.log(elements)
         return (
           <div className="container" key={index}>
-            <h2>{elements.title}</h2>
-            <h2>{elements.body}</h2>
+            <h2>{elements?.name}</h2>
+            <h2>{elements?.body}</h2>
           </div>
         );
       })}
@@ -35,4 +30,4 @@ const Blog = () => {
   );
 };
 
-export { Blog };
+export { Comment };
