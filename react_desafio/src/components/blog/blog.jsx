@@ -1,38 +1,26 @@
-import React from "react";
-import "./blog.css";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useState, useEffect } from "react";
 
 const Blog = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/users")
-      .then((response) => setData(response.data));
-  }, []);
-
-  const [comments, setComments] = useState([]);
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     axios
       .get("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => setComments(response.data));
+      .then((response) => setPosts(response.data))
+      .catch((error) => console.error(error));
   }, []);
 
   return (
     <section>
-      {comments.map((elements, index) => {
-        //console.log(elements)
-        return (
-          <div className="container" key={index}>
-            <h2>{elements.title}</h2>
-            <h2>{elements.body}</h2>
-          </div>
-        );
-      })}
+      {posts.map((post, index) => (
+        <div className="container" key={index}>
+          <h2>{post.title}</h2>
+          <p>{post.body}</p>
+        </div>
+      ))}
     </section>
   );
 };
 
-export { Blog };
+export {Blog};

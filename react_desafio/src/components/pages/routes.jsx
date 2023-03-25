@@ -1,13 +1,19 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Post } from "./post";
-import { Posts } from "./posts";
+import { Menu } from "../menu/menu";
+import { CommentPage } from "./commentPage";
+import { UserDataPage } from "./userDataPage";
+import { BlogPage } from "./blogPage";
+import { UserPage } from "./usersPage";
 
 const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Posts />} />
-        <Route exact path="/posts/:id/comments" element={<Post />} />
+        <Route exact path="/" element={<Menu />} />
+        <Route exact path="/posts" element={<BlogPage />} />
+        <Route exact path="/posts/:id/comments" element={<CommentPage />} />
+        <Route exact path="/users" element={<UserPage />} />
+        <Route exact path="/users/:id" element={<UserDataPage />} />
       </Routes>
     </BrowserRouter>
   );

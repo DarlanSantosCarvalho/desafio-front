@@ -5,20 +5,22 @@
 }
 
 body{
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(196, 196, 196);
 }
 
 .container{
     padding: 15px;
+    text-align: center;
+    color: #E49273;
     cursor: pointer;
     margin-top: 80px;
     margin-bottom: 80px;
     margin-left: 220px;
     border-radius: 25px;
-    border: 1px solid rgb(252, 0, 0);
+    border: 3px solid #E49273;
     height: 300px;
     width: 70%;
-    background-color: rgb(255, 255, 255);
+    background-color: #2B4570;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

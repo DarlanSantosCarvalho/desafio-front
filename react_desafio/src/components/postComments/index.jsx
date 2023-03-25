@@ -22,7 +22,7 @@ const Comment = () => {
         return (
           <div className="container" key={index}>
             <h2>{elements?.name}</h2>
-            <h2>{elements?.body}</h2>
+            <p>{elements?.body}</p>
           </div>
         );
       })}
