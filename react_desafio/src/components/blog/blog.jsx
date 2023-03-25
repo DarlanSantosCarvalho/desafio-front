@@ -5,16 +5,23 @@ const Blog = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => setPosts(response.data))
-      .catch((error) => console.error(error));
+    const fetchPosts = async () => {
+      try {
+        const response = await axios.get(
+          "https://jsonplaceholder.typicode.com/posts"
+        );
+        setPosts(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchPosts();
   }, []);
 
   return (
     <section>
-      {posts.map((post, index) => (
-        <div className="container" key={index}>
+      {posts.map((post) => (
+        <div className="container" key={post.id}>
           <h2>{post.title}</h2>
           <p>{post.body}</p>
         </div>
@@ -23,4 +30,4 @@ const Blog = () => {
   );
 };
 
-export {Blog};
+export { Blog };

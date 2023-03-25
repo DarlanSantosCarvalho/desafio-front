@@ -26,23 +26,23 @@ const DataUser = () => {
           <div key={index}>
             <div className="container-data-user">
               <div className="item">
-                <label htmlFor="Nome">Name:</label>
+                <label htmlFor="#">Name:</label>
                 <p>{elements.name}</p>
               </div>
               <div className="item">
-                <label htmlFor="Nome">Email:</label>
+                <label htmlFor="#">Email:</label>
                 <p>{elements.email}</p>
               </div>
               <div className="item">
-                <label htmlFor="Nome">Phone:</label>
+                <label htmlFor="#">Phone:</label>
                 <p>{elements.phone}</p>
               </div>
               <div className="item">
-                <label htmlFor="Nome">Username:</label>
+                <label htmlFor="#">Username:</label>
                 <p>{elements.username}</p>
               </div>
               <div className="item">
-                <label htmlFor="Nome">Website:</label>
+                <label htmlFor="#">Website:</label>
                 <p>{elements.website}</p>
               </div>
             </div>

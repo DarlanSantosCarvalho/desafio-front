@@ -24,6 +24,11 @@ ul{
     align-items: center;
 }
 
+.container-data-user:hover{
+    box-shadow: 5px 5px 5px 10px #E49273;
+    transition: 0.8s;
+}
+
 .item{
     display: flex;
     justify-content: space-between;
