@@ -1,0 +1,44 @@
+@media screen and (max-width: 768px) {
+  .container-options {
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .options {
+    margin: 20px;
+  }
+
+  .container {
+    font-size: 0.8rem;
+  }
+
+  .item {
+    gap: 5px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .container-data-user {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-data-user {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    gap: 5px;
+    margin: 10px;
+    padding: 10px;
+  }
+}
