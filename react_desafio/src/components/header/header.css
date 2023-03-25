@@ -9,13 +9,13 @@
 
 nav{
   height: 250px;
-  background: linear-gradient(88.27deg, #505b7a 0%, #2B4570 100%);
+  background: linear-gradient(88.27deg, #222222 0%, #000000 100%);
 }
 
 .nav-container{
   display: flex;
   justify-content: space-around;
   padding: 100px;
-  color: #E49273;
+  color: #a8864f;
   font-family: 'Montserrat', sans-serif;
 }
