@@ -1,11 +1,9 @@
-import Header from "./components/header/header";
 import { AppRoutes } from "./components/pages/routes";
+import "./components/responsive/responsive.css"
 
 function App() {
   return (
     <>
-      <Header />
-
       <AppRoutes />
     </>
   );

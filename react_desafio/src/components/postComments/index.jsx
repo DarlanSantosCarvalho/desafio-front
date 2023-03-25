@@ -20,9 +20,11 @@ const Comment = () => {
       {comments.map((elements, index) => {
         //console.log(elements)
         return (
-          <div className="container" key={index}>
-            <h2>{elements?.name}</h2>
-            <p>{elements?.body}</p>
+          <div className="container-container">
+            <div className="container" key={index}>
+              <h2>{elements?.name}</h2>
+              <p>{elements?.body}</p>
+            </div>
           </div>
         );
       })}

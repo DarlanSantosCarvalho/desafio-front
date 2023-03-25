@@ -23,8 +23,8 @@ const DataUser = () => {
     <section>
       {userData.map((elements, index) => {
         return (
-          <div key={index}>
-            <div className="container-data-user">
+          <div className="container-container" key={index}>
+            <div className="container-user">
               <div className="item">
                 <label htmlFor="#">Name:</label>
                 <p>{elements.name}</p>

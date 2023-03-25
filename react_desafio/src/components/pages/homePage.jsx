@@ -1,13 +1,13 @@
-import {Menu} from "../menu/menu"
+import {Home} from "../home/home"
 import React from 'react'
 
-const MenuPage = () => {
+const HomePage = () => {
   return (
-    <Menu />
+    <Home />
   )
 }
 
-export {MenuPage}
+export {HomePage}
 
 
 //Utilizado para pegar um ID específico de um Post pela URL

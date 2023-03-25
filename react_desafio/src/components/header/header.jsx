@@ -1,11 +1,12 @@
 import React from "react";
 import "./header.css";
+import {Link} from 'react-router-dom'
 
 const Header = () => {
   return (
     <nav>
       <div className="nav-container">
-        <h1>Rettiwt</h1>
+        <Link to={"/"}><h2>Rettiwt</h2></Link>
         <h2>Seu site de blogs</h2>
       </div>
     </nav>
