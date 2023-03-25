@@ -8,9 +8,9 @@
 
 <h1>Como acessar cada página do Router:</h1>
 
-<h2>Para acessar a página de posts do projeto, tem que ir na URL e digitar "(localhost)/posts"</h2>
-<p>Para acessar os comentários desse post, iremos acessar pela URL "(localhost)/posts/(id do post desejado(1 a 100)/comments". Assim, acessando os comentários do post desejado.</p>
+<h2>Para acessar a página de posts do projeto, basta clicar na palavra POSTS no home ou ir na URL e digitar "(localhost)/posts"</h2>
+<p>Para acessar os comentários desse post, clicamos no usuário no qual desejamos saber mais, acessando assim seus comentários referentes ao post em questão</p>
 
 
-<h2>Para acessar a listagem de usuários do projeto, tem que ir na URL e digitar "(localhost)/users"</h2>
-<p>Para acessar os dados desses usuários, acessamos a URL "(localhost)/users/(id desejado(1 a 10))" Dessa maneira, acessamos os dados registrados do usuário.</p>
+<h2>Para acessar a listagem de usuários do projeto, basta clicar na palavra USERS no home ou ir na URL e digitar "(localhost)/users"</h2>
+<p>Para acessar os dados desses usuários, clicamos no usuário no qual desejamos saber mais, acessando assim suas informações.</p>
