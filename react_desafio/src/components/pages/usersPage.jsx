@@ -17,17 +17,17 @@ const UserPage = () => {
     <section>
       {data.map((elements, index) => {
         return (
-          <div className="container" key={index}>
-            <ul>
-              <div>
+          <div key={index}>
+            <div className="container-data-user">
+              <div className="item">
                 <label htmlFor="Nome">Name:</label>
-                <li>{elements.name}</li>
+                <p>{elements.name}</p>
               </div>
-              <div>
-              <label htmlFor="Nome">Email:</label>
-                <li>{elements.email}</li>
+              <div className="item">
+                <label htmlFor="Nome">Email:</label>
+                <p>{elements.email}</p>
               </div>
-            </ul>
+            </div>
           </div>
         );
       })}
