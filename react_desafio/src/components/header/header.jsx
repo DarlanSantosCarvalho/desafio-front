@@ -7,7 +7,7 @@ const Header = () => {
     <nav>
       <div className="nav-container">
         <Link to={"/"}><h2 className="click-home">Rettiwt</h2></Link>
-        <h2>Seu site de blogs</h2>
+        <h2>Seu site de blog</h2>
       </div>
     </nav>
   );
