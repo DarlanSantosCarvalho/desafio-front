@@ -15,14 +15,13 @@
 .container-home {
   padding: 15px;
   text-align: center;
-  color: #a8864f;
+  color: #11b39d;
   margin-top: 80px;
   margin-bottom: 80px;
   border-radius: 25px;
-  border: 3px solid #a8864f;
+  border: 3px solid #11b39d;
   height: 300px;
   width: 70%;
-  background-color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -30,17 +29,17 @@
 
 a{
   text-decoration: none;
-  color: #a8864f;
+  color: #11b39d;
 }
 
 .container-home:hover {
-  box-shadow: 5px 5px 5px 10px #a8864f;
+  box-shadow: 5px 5px 5px 10px #11b39d;
   transition: 0.8s;
 }
 
-h1{
+.subtitle{
   text-align: center;
-  color: #a8864f;
+  color: #11b39d;
 }
 
 .container-options{
@@ -49,20 +48,29 @@ h1{
   gap: 200px;
 }
 
+.option{
+  color: #B3DEE2;
+}
+
 .options{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 150px;
   height: 150px;
-  background-color: #000000;
+  background-color: #ffffff;
   color: #a8864f;
   margin: 40px;
-  border-bottom: 10px solid #a8864f;
+  border-bottom: 10px solid #B3DEE2;
 }
 
 .options:hover{
   transition: 0.8s;
-  border-bottom: 20px solid #a8864f;
+  border-bottom: 20px solid #11b39d;
+}
+
+.option:hover{
+  transition: 0.4s;
+  color: #11b39d;
 }
 

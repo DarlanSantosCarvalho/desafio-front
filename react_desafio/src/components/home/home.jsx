@@ -11,18 +11,18 @@ const Home = () => {
         <p>(Sem limite de caracteres) </p>
       </div>
 
-      <h1>Avaliable Services</h1>
+      <h1 className="subtitle">Avaliable Services</h1>
 
       <div className="container-options">
         <div className="options posts">
           <Link to={"/posts"}>
-            <h2>Posts</h2>
+            <h2 className="option">Posts</h2>
           </Link>
         </div>
 
         <div className="options user">
         <Link to={"/users"}>
-            <h2>Users</h2>
+            <h2 className="option">Users</h2>
           </Link>
         </div>
       </div>

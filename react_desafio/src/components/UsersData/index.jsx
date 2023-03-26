@@ -3,6 +3,7 @@ import "./index.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const DataUser = () => {
   const [user, setUser] = useState([]);
@@ -49,6 +50,10 @@ const DataUser = () => {
           </div>
         );
       })}
+
+      <Link to={`/users`}>
+        <button className="container-button-back">Back</button>
+      </Link>
     </section>
   );
 };

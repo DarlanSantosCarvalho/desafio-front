@@ -6,16 +6,24 @@
   box-sizing: border-box;
 }
 
-
-nav{
+nav {
   height: 250px;
-  background: linear-gradient(88.27deg, #222222 0%, #000000 100%);
+  background-color: #b3dee2;
 }
 
-.nav-container{
+.nav-container {
   display: flex;
   justify-content: space-around;
   padding: 100px;
-  color: #a8864f;
-  font-family: 'Montserrat', sans-serif;
+  color: #11b39d;
+  font-family: "Montserrat", sans-serif;
+}
+
+.click-home {
+  color: #11b39d;
+}
+
+.click-home:hover {
+  font-size: 30px;
+  transition: 0.8s;
 }

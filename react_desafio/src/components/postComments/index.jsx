@@ -1,8 +1,10 @@
 import React from "react";
 import "../blog/blog.css";
 import axios from "axios";
+import "./index.css";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Comment = () => {
   const [comments, setComments] = useState([]);
@@ -28,6 +30,9 @@ const Comment = () => {
           </div>
         );
       })}
+      <Link to={`/posts`}>
+        <button className="container-button-back">Back</button>
+      </Link>
     </section>
   );
 };

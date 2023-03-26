@@ -1,0 +1,20 @@
+.container-button-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+    background: #11b39d;
+    color: #B3DEE2; 
+    border: none;
+    font-weight: 700;
+}
+
+.container-button-back:hover{
+    padding: 25px;
+    font-size: 20px;
+    transition: 0.8s;
+}

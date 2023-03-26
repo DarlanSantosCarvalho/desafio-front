@@ -21,6 +21,9 @@ const Blog = () => {
 
   return (
     <section className="container-container">
+      <Link to={`/`}>
+        <button className="container-back">Back</button>
+      </Link>
       {posts.map((post) => (
         <div className="container" key={post.id}>
           <h2>{post.title}</h2>
