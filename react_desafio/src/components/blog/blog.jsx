@@ -21,6 +21,7 @@ const Blog = () => {
 
   return (
     <section className="container-container">
+      <h1 className="subtitle">Posts</h1>
       <Link to={`/`}>
         <button className="container-back">Back</button>
       </Link>

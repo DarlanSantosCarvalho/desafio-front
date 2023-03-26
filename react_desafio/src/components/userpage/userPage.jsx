@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import "./userpage.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -16,6 +17,12 @@ const UserPage = () => {
 
   return (
     <section>
+
+<h1 className="subtitle">Users</h1>
+
+      <Link to={`/`}>
+        <button className="container-back">Back</button>
+      </Link>
       {data.map((elements, index) => {
         return (
           <div className="container-container" key={index}>

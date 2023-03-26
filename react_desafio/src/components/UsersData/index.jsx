@@ -22,6 +22,7 @@ const DataUser = () => {
 
   return (
     <section>
+      <h1 className="subtitle">Data Users</h1>
       {userData.map((elements, index) => {
         return (
           <div className="container-container" key={index}>

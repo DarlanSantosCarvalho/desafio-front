@@ -19,6 +19,7 @@ const Comment = () => {
 
   return (
     <section>
+      <h1 className="subtitle">Posts Comments</h1>
       {comments.map((elements, index) => {
         //console.log(elements)
         return (
